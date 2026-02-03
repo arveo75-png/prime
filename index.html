@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaMotion • Text-to-Video Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="background-glow"></div>
+    <header class="site-header">
+      <nav class="nav">
+        <div class="logo">NovaMotion</div>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#gallery">Gallery</a>
+          <button class="ghost-button">Sign in</button>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="badge">Text → Video Studio</p>
+          <h1>Generate cinematic videos from a single prompt.</h1>
+          <p class="hero-subtitle">
+            Direct your next campaign, product launch, or social story with NovaMotion’s
+            AI-powered storyboard engine. Write it once, preview instantly, and export in 4K.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-button">Start generating</button>
+            <button class="secondary-button">Watch demo</button>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <h3>12k+</h3>
+              <p>Videos rendered today</p>
+            </div>
+            <div>
+              <h3>45 sec</h3>
+              <p>Average render time</p>
+            </div>
+            <div>
+              <h3>120+</h3>
+              <p>Creative style packs</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="panel-header">
+            <div>
+              <h4>Prompt Studio</h4>
+              <p>Describe the vibe, camera, and pacing.</p>
+            </div>
+            <span class="status">Live preview</span>
+          </div>
+          <div class="panel-body">
+            <label for="prompt">Your prompt</label>
+            <textarea id="prompt" rows="4" placeholder="A futuristic runway show at sunrise, slow-motion fabrics, neon reflections..."></textarea>
+            <div class="chips">
+              <span>Runway</span>
+              <span>Cinematic</span>
+              <span>Slow motion</span>
+              <span>Golden hour</span>
+            </div>
+            <div class="panel-actions">
+              <button class="primary-button">Generate preview</button>
+              <button class="ghost-button">Save storyboard</button>
+            </div>
+            <div class="preview">
+              <div class="preview-card">
+                <p>Scene 01 • 4s</p>
+                <h5>Tracking shot of models on a luminous runway.</h5>
+              </div>
+              <div class="preview-card">
+                <p>Scene 02 • 6s</p>
+                <h5>Close-up textiles with neon rim light.</h5>
+              </div>
+              <div class="preview-card">
+                <p>Scene 03 • 5s</p>
+                <h5>Wide reveal of skyline and crowd silhouettes.</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="features" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Features</p>
+          <h2>Everything you need to bring your prompts to life.</h2>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <h3>Prompt-to-storyboard</h3>
+            <p>Create multi-scene narratives with consistent characters and camera language.</p>
+          </article>
+          <article>
+            <h3>Dynamic motion controls</h3>
+            <p>Adjust camera movement, speed ramps, and transitions in one slider.</p>
+          </article>
+          <article>
+            <h3>Style pack library</h3>
+            <p>Drop in looks inspired by anime, live action, or editorial motion design.</p>
+          </article>
+          <article>
+            <h3>Audio sync</h3>
+            <p>Generate music beds and sync beats with smart scene cutting.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="workflow" class="section workflow">
+        <div>
+          <p class="eyebrow">Workflow</p>
+          <h2>From script to final cut in three steps.</h2>
+          <ol>
+            <li><strong>Describe</strong> the story, setting, and pacing.</li>
+            <li><strong>Refine</strong> storyboards with scene-by-scene controls.</li>
+            <li><strong>Export</strong> in social-ready formats with auto captions.</li>
+          </ol>
+          <button class="secondary-button">Explore workflow</button>
+        </div>
+        <div class="workflow-card">
+          <h4>Render timeline</h4>
+          <div class="timeline">
+            <div>
+              <span>Scene 01</span>
+              <span class="pill">4s</span>
+            </div>
+            <div>
+              <span>Scene 02</span>
+              <span class="pill">6s</span>
+            </div>
+            <div>
+              <span>Scene 03</span>
+              <span class="pill">5s</span>
+            </div>
+            <div>
+              <span>Scene 04</span>
+              <span class="pill">7s</span>
+            </div>
+          </div>
+          <div class="render-progress">
+            <span>Render status</span>
+            <div class="bar"><div class="bar-fill"></div></div>
+            <p>82% complete • ETA 00:12</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section gallery">
+        <div class="section-heading">
+          <p class="eyebrow">Gallery</p>
+          <h2>Recent community renders.</h2>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-card">
+            <p>Retro Tokyo Drift</p>
+            <span>12s • Synthwave</span>
+          </div>
+          <div class="gallery-card">
+            <p>Wildlife Expedition</p>
+            <span>18s • Documentary</span>
+          </div>
+          <div class="gallery-card">
+            <p>Luxury Product Teaser</p>
+            <span>9s • Editorial</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h4>NovaMotion Studio</h4>
+        <p>Text-to-video generation for modern creative teams.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Docs</a>
+        <a href="#">Pricing</a>
+        <a href="#">Support</a>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
